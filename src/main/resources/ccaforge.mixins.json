@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sjhub.ccaforge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "ccaforge.refmap.json",
+  "mixins": [
+    "accessor.ChunkMapAccessor",
+    "accessor.EntityMapAccessor",
+    "entity.common.MixinEntity",
+    "entity.common.MixinPlayerManager",
+    "entity.common.MixinServerPlayerEntity",
+    "entity.common.MixinServerWorld"
+  ],
+  "client": [
+    "entity.client.MixinClientWorld"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
